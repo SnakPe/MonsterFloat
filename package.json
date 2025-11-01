@@ -1,0 +1,21 @@
+{
+  "name": "monsterfloat",
+  "version": "1.0.2",
+  "type": "module",
+  "description": "Arbitrary-length rational numbers",
+  "scripts": {
+    "build": "tsc && rollup --config",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "arbitrary-length"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["/dist"],
+  "author": "Snake",
+  "license": "MIT",
+  "devDependencies": {
+    "rollup": "^4.52.5"
+  }
+}
