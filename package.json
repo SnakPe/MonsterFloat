@@ -1,6 +1,6 @@
 {
   "name": "monsterfloat",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "type": "module",
   "description": "Arbitrary-length rational numbers",
   "scripts": {
@@ -10,17 +10,14 @@
   "keywords": [
     "arbitrary-length"
   ],
-  "main": "dist/MonsterFloat.js",
-  "types": "dist/MonsterFloat.d.ts",
+  "main": "dist/bundled/monsterfloat.js",
+  "types": "dist/bundled/MonsterFloat.d.ts",
   "files": [
-    "/dist"
+    "/dist/bundled"
   ],
   "author": "Snake",
   "license": "MIT",
   "devDependencies": {
     "rollup": "^4.52.5"
-  },
-  "dependencies": {
-    "monsterfloat": "^1.0.3"
   }
 }
