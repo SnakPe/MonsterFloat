@@ -1,9 +1,4 @@
-const MonsterMath = {
-    random: (min, max) => BigInt(Math.floor(Math.random() * Number(max - min) + Number(min))),
-    abs: (x) => x < 0 ? -x : x,
-    gcd: (a, b) => b == 0n ? a : MonsterMath.gcd(b, a % b)
-};
-
+import { MonsterMath } from "./MonsterMath.js";
 /**
  * Represents an arbitrary-precision rational number using a pair of BigInts.
  * This class provides exact arithmetic operations without floating-point precision loss.
@@ -324,5 +319,3 @@ class MonsterFloat {
         return this.orderOperationHelper((l, r) => l >= r)(other);
     }
 }
-
-export { MonsterFloat };

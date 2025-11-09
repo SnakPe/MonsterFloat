@@ -1,9 +1,8 @@
 
 export default {
-	input: 'dist/MonsterFloat.js',
+	input: 'dist/unbundled/MonsterFloat.js',
 	output: {
-		file: 'bigfloat.js',
-		format: 'es'
+		file: 'dist/bundled/monsterfloat.js',
 	},
 	treeshake:false
 };

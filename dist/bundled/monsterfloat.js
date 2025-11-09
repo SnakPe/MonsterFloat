@@ -1,4 +1,9 @@
-import { MonsterMath } from "./MonsterMath.js";
+const MonsterMath = {
+    random: (min, max) => BigInt(Math.floor(Math.random() * Number(max - min) + Number(min))),
+    abs: (x) => x < 0 ? -x : x,
+    gcd: (a, b) => b == 0n ? a : MonsterMath.gcd(b, a % b)
+};
+
 /**
  * Represents an arbitrary-precision rational number using a pair of BigInts.
  * This class provides exact arithmetic operations without floating-point precision loss.
@@ -22,7 +27,7 @@ import { MonsterMath } from "./MonsterMath.js";
  * - Use {@link toNumberString} for decimal string representation
  * - Use {@link toFractionString} for fractional string representation
  */
-export class MonsterFloat {
+class MonsterFloat {
     /**
    * Creates a new MonsterFloat instance representing a rational number.
    *
