@@ -111,7 +111,9 @@ export class MonsterFloat {
                         return numberStringToBigFloatHelper(other);
                     //try reading a fraction.
                     const parts = other.split("/");
-                    if (parts.length !== 2)
+                    if (parts.length === 0)
+                        throw Error(`Cannot recognise ${other} as a fraction of two integers`);
+                    if (parts.length >= 2)
                         throw Error(`Cannot read ${other} because of too many '/'`);
                     try {
                         if (parts.some(p => p.length === 0))

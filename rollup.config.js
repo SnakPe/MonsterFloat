@@ -1,6 +1,6 @@
 
 export default {
-	input: 'dist/index.js',
+	input: 'dist/MonsterFloat.js',
 	output: {
 		file: 'bigfloat.js',
 		format: 'es'
