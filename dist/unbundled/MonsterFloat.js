@@ -22,7 +22,7 @@ import { MonsterMath } from "./MonsterMath.js";
  * - Use {@link toNumberString} for decimal string representation
  * - Use {@link toFractionString} for fractional string representation
  */
-export class MonsterFloat {
+class MonsterFloat {
     /**
    * Creates a new MonsterFloat instance representing a rational number.
    *

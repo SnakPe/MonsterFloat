@@ -324,5 +324,3 @@ class MonsterFloat {
         return this.orderOperationHelper((l, r) => l >= r)(other);
     }
 }
-
-export { MonsterFloat };
